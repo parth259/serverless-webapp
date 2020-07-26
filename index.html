@@ -19,7 +19,7 @@
 
             self.getCustomerDetails = function () {              
                 $.ajax({
-                    url: 'YOUR GET API URL HERE',
+                    url: 'https://ntq3wbeeph.execute-api.us-east-2.amazonaws.com/Dev/get-customer-detail-by-email',
                     cache: false,
                     type: 'GET',                   
                     data: { "EmailID": self.searchKey() },
@@ -49,7 +49,7 @@
 
     <br />
   
-    <table id="CustomerDetails">
+    <table id="Customer_Details">
         <thead>
             <tr>
                 <td>First Name:</td>
